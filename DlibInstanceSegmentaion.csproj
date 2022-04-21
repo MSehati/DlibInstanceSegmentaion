@@ -17,7 +17,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Extra\" />
+    <None Update="Extra\instance_segmentation_voc2012net.dnn">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 

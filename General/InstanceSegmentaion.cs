@@ -11,7 +11,8 @@ namespace DlibInstanceSegmentaion.General
 {
     public static class InstanceSegmentaion
     {
-        private const string SemanticSegmentationNetFilename = "Extra/semantic_segmentation_voc2012net_v2.dnn";
+        //semantic_segmentation_voc2012net_v2.dnn
+        private const string SemanticSegmentationNetFilename = "Extra/instance_segmentation_voc2012net.dnn";
         public static SegmentInfo DoSegmentaion(string picturePath,string imageId)
         {
             try
