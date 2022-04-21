@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="original\**" />
+    <Content Remove="original\**" />
+    <EmbeddedResource Remove="original\**" />
+    <None Remove="original\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DlibDotNet.CUDA111" Version="19.21.0.20220130" />
+    <PackageReference Include="NLog" Version="4.7.15" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Extra\" />
+  </ItemGroup>
+
+
+</Project>
