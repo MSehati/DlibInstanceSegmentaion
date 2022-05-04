@@ -13,7 +13,7 @@ using DlibInstanceSegmentaion.General;
 namespace DlibInstanceSegmentaion.Controllers
 {
     [ApiController]
-    [Route("[controller]/[action]")]
+    [Route("[controller]")]
     [Produces("application/json")]
     public class InstanceSegmentaionController : ControllerBase
     {
