@@ -18,4 +18,4 @@ RUN dotnet publish "DlibInstanceSegmentaion.csproj" -c Release -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "DlibInstanceSegmentaion.dll"]
+ENTRYPOINT ["dotnet", "DlibInstanceSegmentaion.dll", "--urls", "http://:2100"]
